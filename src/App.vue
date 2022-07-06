@@ -1,17 +1,39 @@
 <template>
   <div class="container">
     <Header title="Task Tracker" />
+    <Tasks :tasks="tasks" />
   </div>
 </template>
 
 <script>
 import Header from "./components/Header.vue";
+import Tasks from "./components/Tasks.vue";
 
 export default {
   name: "App",
   components: {
     Header,
+    Tasks,
   },
+  data() {
+    tasks: []
+  },
+  created() {
+    this.tasks = [
+      {
+        id: 1,
+        text: 'Doctor\'s appointment',
+        day: 'March 1st at 2:30pm',
+        reminder: true,
+      },
+      {
+        id: 2,
+        text: 'Vet\'s appointment',
+        day: 'March 2nd at 2:30pm',
+        reminder: false,
+      }
+    ]
+  }
 };
 </script>
 
