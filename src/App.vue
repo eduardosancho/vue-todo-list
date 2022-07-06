@@ -1,26 +1,30 @@
 <template>
-  <h1>Hello World</h1>
-  <h3>Ha</h3>
+  <div class="container">
+    <h1>Hello World</h1>
+    <Header />
+  </div>
 </template>
 
 <script>
+import Header from "./components/Header.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-  }
-}
+    Header,
+  },
+};
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .container {
   max-width: 500px;
