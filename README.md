@@ -5,6 +5,11 @@
 npm install
 ```
 
+### Get the backend up and running
+```
+npm run backend
+```
+
 ### Compiles and hot-reloads for development
 ```
 npm run serve
